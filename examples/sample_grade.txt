@@ -1,0 +1,35 @@
+Student Name: Amit
+Subject 1 (Mathematics): 92
+Subject 2 (Science): 88
+Subject 3 (English): 95
+Subject 4 (History): 78
+Subject 5 (Computer): 91
+
+Student Name: Raj
+Subject 1 (Mathematics): 85
+Subject 2 (Science): 76
+Subject 3 (English): 82
+Subject 4 (History): 90
+Subject 5 (Computer): 88
+
+Student Name: John
+Subject 1 (Mathematics): 78
+Subject 2 (Science): 85
+Subject 3 (English): 91
+Subject 4 (History): 82
+Subject 5 (Computer): 79
+
+Student Name: Mahi
+Subject 1 (Mathematics): 90
+Subject 2 (Science): 85
+Subject 3 (English): 95
+Subject 4 (History): 85
+Subject 5 (Computer): 95
+
+Student Name: Sai
+Subject 1 (Mathematics): 80
+Subject 2 (Science): 75
+Subject 3 (English): 90
+Subject 4 (History): 85
+Subject 5 (Computer): 78
+
