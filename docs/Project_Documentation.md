@@ -192,8 +192,6 @@ This ensures data is not lost between program executions.
 | Performance reports         | ✔ Implemented |
 | File persistence            | ✔ Implemented |
 
-This project corresponds to **Option 3 – Advanced Version**.
-
 ---
 
 ## 13. Testing Evidence
