@@ -60,7 +60,8 @@ The system uses arrays and object-oriented programming concepts and supports fil
 2. Import the project as a **Java Project**
 3. Ensure all `.java` files are inside the `src` folder
 4. Place `sample_grade.txt` inside the `examples` folder
-5. Run `GradeManagementSystem.java`
+5. Navigate to `GradeManagementSystem.java`
+6. Right-click and select **Run As->Java Application**
 
 ---
 
@@ -86,14 +87,14 @@ GradeManagementSystem/
 
 ## 7. Code Structure Explanation
 
-### 5.1 GradeManagementSystem.java
+### GradeManagementSystem.java
 
 * Main class of the application
 * Displays menu and handles user input
 * Calls other classes for calculations and reporting
 * Handles file loading and saving
 
-### 5.2 StudentGrade.java
+### StudentGrade.java
 
 * Data class to store:
 
@@ -103,14 +104,14 @@ GradeManagementSystem/
   * Grade
 * No getters/setters used (direct access as per requirement)
 
-### 5.3 GradeCalculator.java
+### GradeCalculator.java
 
 * Contains utility methods:
 
   * `calculateAverage()`
   * `calculateGrade()`
 
-### 5.4 ReportGenerator.java
+### ReportGenerator.java
 
 * Generates:
 
