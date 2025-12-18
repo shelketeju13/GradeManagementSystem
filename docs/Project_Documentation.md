@@ -79,10 +79,9 @@ GradeManagementSystem/
 ├── docs/
 │   └── Project_Documentation.md
 ├── examples/
-    └── sample_grade.txt
-    └── student_data.txt
+│   └── sample_grade.txt
+│   └── student_data.txt
 ```
-
 ---
 
 ## 7. Code Structure Explanation
