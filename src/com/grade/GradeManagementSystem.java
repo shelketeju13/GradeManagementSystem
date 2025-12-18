@@ -54,7 +54,7 @@ public class GradeManagementSystem {
         } while (choice != 6);
     }
 
-    // ================= ADD =================
+    // Add Student
     static void addStudent(Scanner sc) {
         System.out.println("\n=== ADD STUDENT MARKS ===");
         System.out.print("Enter Student Name: ");
@@ -84,7 +84,7 @@ public class GradeManagementSystem {
     }
 
 
-    // ================= VIEW =================
+    // View Students
     static void viewStudents() {
         System.out.println("\n=== ALL STUDENTS ===");
         System.out.printf("%-20s %-10s %-10s %-10s %-10s %-10s %-10s%n",
@@ -98,7 +98,7 @@ public class GradeManagementSystem {
         }
     }
 
-    // ================= AVERAGES =================
+    // Averages
     static void showAverages() {
         System.out.println("\n=== STUDENT AVERAGES ===");
         for (int i = 0; i < count; i++) {
@@ -109,7 +109,7 @@ public class GradeManagementSystem {
         }
     }
 
-    // ================= TOP =================
+    // Top Performers
     static void showTopPerformers() {
 
         // Bubble sort by average (descending)
@@ -133,11 +133,19 @@ public class GradeManagementSystem {
     }
     
     static void loadFromFile() {
-        try {
-            File file = new File("students_data.txt");
-            if (!file.exists()) return;
+        File dataFile = new File("examples/student_data.txt");
+        File sampleFile = new File("examples/sample_grade.txt");
 
-            Scanner fs = new Scanner(file);
+        try {
+            Scanner fs;
+
+            if (dataFile.exists()) {
+                fs = new Scanner(dataFile);
+            } else if (sampleFile.exists()) {
+                fs = new Scanner(sampleFile);
+            } else {
+                return;
+            }
 
             while (fs.hasNextLine() && count < MAX) {
                 String line = fs.nextLine();
@@ -145,22 +153,25 @@ public class GradeManagementSystem {
 
                 String name = data[0];
                 double[] marks = new double[SUBJECTS];
+
                 for (int i = 0; i < SUBJECTS; i++) {
                     marks[i] = Double.parseDouble(data[i + 1]);
                 }
 
                 students[count++] = new StudentGrade(name, marks);
             }
+
             fs.close();
 
         } catch (Exception e) {
-            System.out.println("Error loading student data.");
+            System.out.println("Error loading data from file.");
         }
     }
+
     
     static void saveToFile() {
         try {
-            PrintWriter pw = new PrintWriter("students_data.txt");
+            PrintWriter pw = new PrintWriter("examples/student_data.txt");
 
             for (int i = 0; i < count; i++) {
                 pw.print(students[i].name);
@@ -172,7 +183,7 @@ public class GradeManagementSystem {
             pw.close();
 
         } catch (Exception e) {
-            System.out.println("Error saving student data.");
+            System.out.println("Error saving data.");
         }
     }
 
