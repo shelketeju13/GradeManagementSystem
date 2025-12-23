@@ -32,4 +32,3 @@ Subject 2 (Science): 75
 Subject 3 (English): 90
 Subject 4 (History): 85
 Subject 5 (Computer): 78
-
