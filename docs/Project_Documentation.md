@@ -1,4 +1,4 @@
-# Grade Management System – Project Documentation
+# Grade Management System
 
 ---
 
